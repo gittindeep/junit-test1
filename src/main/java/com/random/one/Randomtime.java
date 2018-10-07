@@ -12,6 +12,7 @@ public class Randomtime {
 	    System.out.println("Current Minute: " + localTime.getMinute());
 	    System.out.println("Current Second: " + localTime.getSecond());
 	    
+	    //create mins variables
 	    long currentmins = (localTime.getHour()*60) + localTime.getMinute();
 	    long remainingminstoday = 1439 - currentmins;
 	    long randomtime=(int)(Math.random()*((remainingminstoday-0)+1))+0;
